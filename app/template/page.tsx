@@ -2,6 +2,7 @@ import React from "react";
 import imagee from "../../assets/KidInSnow.png";
 import Image from "next/image";
 import CancelVectorSVG from "@/assets/Icon/CancelVectorSVG";
+import { libreBaskerville } from "@/utils/fonts";
 
 const page = () => {
   return (
@@ -152,11 +153,12 @@ const page = () => {
               }}
             >
               <p
+                className={`${libreBaskerville.className}`}
                 style={{
-                  fontFamily: "Libre Baskerville, serif",
+                  // fontFamily: "'Libre Baskerville', serif",
                   fontSize: "28px",
                   fontWeight: 700,
-                  lineHeight: "35px",
+                  color: "#000",
                   textAlign: "center",
                 }}
               >
