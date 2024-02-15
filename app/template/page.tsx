@@ -4,6 +4,7 @@ import Image from "next/image";
 import CancelVectorSVG from "@/assets/Icon/CancelVectorSVG";
 import TickSignSVG from "@/assets/Icon/TickSignSVG";
 import stylegirl from "@/assets/StyleGirl.png";
+import { libreBaskerville } from "@/utils/fonts";
 
 const page = () => {
   return (
