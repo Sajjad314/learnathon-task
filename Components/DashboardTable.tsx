@@ -208,6 +208,7 @@ const DashboardTable = () => {
     if (selectedRow.includes(id)) {
       const filteredArray: string[] = selectedRow.filter((item) => item !== id);
       setSelectedRow(filteredArray);
+      setIsAllSelected(false);
     } else {
       setSelectedRow((prevArray) => [...prevArray, id]);
     }
@@ -245,6 +246,7 @@ const DashboardTable = () => {
                         type="checkbox"
                         checked={isAllSelected}
                         onChange={handleSelectAllClick}
+                        className=" h-5 w-5 rounded border-2 border-black focus:ring-0"
                       />
                     ) : (
                       column
