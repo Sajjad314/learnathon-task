@@ -1,10 +1,9 @@
 "use client";
 
-import React, { use, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import placeholderImage from "@/assets/Screenshot (67).png";
 import dotMenu from "@/assets/dots.png";
-import { type } from "os";
 import DeleteIconSVG from "@/assets/Icon/DeleteIconSVG";
 
 interface Row {
@@ -192,7 +191,6 @@ const DashboardTable = () => {
     "Status",
     "Action",
   ];
-
   const handleSelectAllClick = () => {
     if (isAllSelected) {
       setIsAllSelected(false);
@@ -203,7 +201,6 @@ const DashboardTable = () => {
       setSelectedRow(idsArray);
     }
   };
-
   const handleSelect = (id: string) => {
     if (selectedRow.includes(id)) {
       const filteredArray: string[] = selectedRow.filter((item) => item !== id);

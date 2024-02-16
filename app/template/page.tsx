@@ -4,7 +4,16 @@ import Image from "next/image";
 import CancelVectorSVG from "@/assets/Icon/CancelVectorSVG";
 import TickSignSVG from "@/assets/Icon/TickSignSVG";
 import stylegirl from "@/assets/StyleGirl.png";
-import { libreBaskerville } from "@/utils/fonts";
+import {
+  dm_sans,
+  dm_serif_display,
+  inria_sans,
+  jost,
+  libreBaskerville,
+  libre_bodoni,
+  manrope,
+  metrophobic,
+} from "@/utils/fonts";
 
 const page = () => {
   return (
@@ -44,7 +53,7 @@ const page = () => {
             >
               <p
                 style={{
-                  fontFamily: "Manrope, sans-serif",
+                  fontFamily: manrope.style.fontFamily,
                   fontWeight: 600,
                   fontSize: "20px",
                   lineHeight: "27.32px",
@@ -57,7 +66,7 @@ const page = () => {
               </p>
               <p
                 style={{
-                  fontFamily: "Manrope, sans-serif",
+                  fontFamily: manrope.style.fontFamily,
                   fontSize: "14px",
                   fontWeight: 300,
                   lineHeight: "19px",
@@ -105,7 +114,7 @@ const page = () => {
             </button>
             <p
               style={{
-                fontFamily: "Manrope, sans-serif",
+                fontFamily: manrope.style.fontFamily,
                 fontSize: "10px",
                 fontWeight: 400,
                 lineHeight: "16px",
@@ -157,7 +166,7 @@ const page = () => {
               >
                 <p
                   style={{
-                    fontFamily: "Libre Baskerville, serif",
+                    fontFamily: libreBaskerville.style.fontFamily,
                     fontSize: "28px",
                     fontWeight: 700,
                     lineHeight: "35px",
@@ -168,7 +177,7 @@ const page = () => {
                 </p>
                 <p
                   style={{
-                    fontFamily: "Metropolis, sans-serif",
+                    fontFamily: metrophobic.style.fontFamily,
                     fontSize: "13px",
                     fontWeight: 500,
                     lineHeight: "16px",
@@ -182,7 +191,7 @@ const page = () => {
               </div>
               <p
                 style={{
-                  fontFamily: "Metropolis, sans-serif",
+                  fontFamily: metrophobic.style.fontFamily,
                   fontSize: "13px",
                   fontWeight: 500,
                   lineHeight: "16px",
@@ -217,7 +226,7 @@ const page = () => {
                 <span
                   style={{
                     color: "white",
-                    fontFamily: "Metropolis, sans-serif",
+                    fontFamily: metrophobic.style.fontFamily,
                     fontSize: "16px",
                     fontWeight: 500,
                     lineHeight: "16px",
@@ -230,7 +239,7 @@ const page = () => {
               </button>
               <p
                 style={{
-                  fontFamily: "Metropolis, sans-serif",
+                  fontFamily: metrophobic.style.fontFamily,
                   fontSize: "8px",
                   fontWeight: 500,
                   lineHeight: "16px",
@@ -257,7 +266,7 @@ const page = () => {
           >
             <p
               style={{
-                fontFamily: "Jost",
+                fontFamily: jost.style.fontFamily,
                 fontSize: "18px",
                 fontWeight: 400,
                 lineHeight: "26px",
@@ -298,7 +307,7 @@ const page = () => {
               </p>
               <p
                 style={{
-                  fontFamily: "DM Serif Display",
+                  fontFamily: dm_serif_display.style.fontFamily,
                   fontSize: "32px",
                   fontWeight: 400,
                   lineHeight: "44px",
@@ -376,7 +385,7 @@ const page = () => {
               >
                 <span
                   style={{
-                    fontFamily: "DM Sans",
+                    fontFamily: dm_sans.style.fontFamily,
                     fontWeight: 700,
                     fontSize: "16px",
                     lineHeight: "20.83px",
@@ -415,7 +424,7 @@ const page = () => {
               >
                 <p
                   style={{
-                    fontFamily: "Inria Sans",
+                    fontFamily: inria_sans.style.fontFamily,
                     fontWeight: 400,
                     fontSize: "12px",
                     lineHeight: "14.39px",
@@ -427,7 +436,7 @@ const page = () => {
                 </p>
                 <p
                   style={{
-                    fontFamily: "Libre Bodoni",
+                    fontFamily: libre_bodoni.style.fontFamily,
                     fontWeight: 700,
                     fontSize: "41px",
                     lineHeight: "51.25px",
@@ -439,7 +448,7 @@ const page = () => {
                 </p>
                 <p
                   style={{
-                    fontFamily: "Inria Sans",
+                    fontFamily: inria_sans.style.fontFamily,
                     fontWeight: 300,
                     fontSize: "12px",
                     lineHeight: "14.39px",
@@ -450,7 +459,7 @@ const page = () => {
                   page:{" "}
                   <span
                     style={{
-                      fontFamily: "Inria Sans",
+                      fontFamily: inria_sans.style.fontFamily,
                       fontWeight: 700,
                       fontSize: "12px",
                       lineHeight: "14.39px",
@@ -470,7 +479,7 @@ const page = () => {
               >
                 <span
                   style={{
-                    fontFamily: "Inria Sans",
+                    fontFamily: inria_sans.style.fontFamily,
                     fontWeight: 400,
                     fontSize: "14px",
                     lineHeight: "16.79px",

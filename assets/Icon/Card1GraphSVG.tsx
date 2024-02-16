@@ -1,7 +1,7 @@
 import * as React from "react";
 const Card1GraphSVG = () => (
   <svg
-    width={286}
+    width={"100%"}
     height={78}
     viewBox="0 0 286 78"
     fill="none"

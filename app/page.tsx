@@ -9,6 +9,7 @@ import Card3GraphSVG from "@/assets/Icon/Card3GraphSVG";
 import DashboardCard from "@/Components/DashboardCard";
 import CustomizePopUpModal from "@/Components/CustomizePopUpModal";
 import DashboardTable from "@/Components/DashboardTable";
+import ColorPicker from "@/Components/ColorPicker";
 
 export default function Home() {
   return (
@@ -54,6 +55,7 @@ export default function Home() {
         </div>
         <div className="flex-1 border p-4 bg-white ml-2 h-1/2 w-1/2">
           <CustomizePopUpModal />
+          <ColorPicker />
         </div>
       </div>
       <div className="flex-1 border p-4 bg-white rounded-[10px] ml-4 m-2 ">
