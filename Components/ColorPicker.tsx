@@ -4,7 +4,10 @@ import React, { useState, useRef, useEffect } from "react";
 
 const ColorPicker = () => {
   const [isCardOpen, setIsCardOpen] = useState(false);
-  const [selectedColor, setSelectedColor] = useState<string>("blue-500");
+  const [selectedColor, setSelectedColor] = useState<{
+    bgColor: string;
+    textColor: string;
+  }>({ bgColor: "bg-blue-500", textColor: "text-blue-500" });
   const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -25,40 +28,40 @@ const ColorPicker = () => {
     setIsCardOpen((prevState) => !prevState);
   };
 
-  const handleClick = (color: string) => {
-    setSelectedColor(color);
+  const handleClick = (colorObj: { bgColor: string; textColor: string }) => {
+    setSelectedColor(colorObj);
 
-    console.log("Color clicked:", color);
+    console.log("Color clicked:", colorObj);
   };
 
   const colors = [
-    "blue-500",
-    "green-500",
-    "red-500",
-    "yellow-500",
-    "purple-500",
-    "indigo-500",
-    "pink-500",
-    "teal-500",
-    "gray-500",
-    "orange-500",
-    "blue-700",
-    "green-700",
-    "red-700",
-    "yellow-700",
-    "purple-700",
-    "indigo-700",
-    "pink-700",
-    "teal-700",
+    { bgColor: "bg-blue-500", textColor: "text-blue-500" },
+    { bgColor: "bg-green-500", textColor: "text-green-500" },
+    { bgColor: "bg-red-500", textColor: "text-red-500" },
+    { bgColor: "bg-yellow-500", textColor: "text-yellow-500" },
+    { bgColor: "bg-purple-500", textColor: "text-purple-500" },
+    { bgColor: "bg-indigo-500", textColor: "text-indigo-500" },
+    { bgColor: "bg-pink-500", textColor: "text-pink-500" },
+    { bgColor: "bg-teal-500", textColor: "text-teal-500" },
+    { bgColor: "bg-gray-500", textColor: "text-gray-500" },
+    { bgColor: "bg-orange-500", textColor: "text-orange-500" },
+    { bgColor: "bg-blue-700", textColor: "text-blue-700" },
+    { bgColor: "bg-green-700", textColor: "text-green-700" },
+    { bgColor: "bg-red-700", textColor: "text-red-700" },
+    { bgColor: "bg-yellow-700", textColor: "text-yellow-700" },
+    { bgColor: "bg-purple-700", textColor: "text-purple-700" },
+    { bgColor: "bg-indigo-700", textColor: "text-indigo-700" },
+    { bgColor: "bg-pink-700", textColor: "text-pink-700" },
+    { bgColor: "bg-teal-700", textColor: "text-teal-700" },
   ];
 
   return (
     <div className="flex flex-col items-center mt-8 relative">
-      <p className={` text-lg mb-5 text-${selectedColor} `}>
+      <p className={` text-lg mb-5 ${selectedColor.textColor} `}>
         This is the chosen color
       </p>
       <button
-        className={`bg-${selectedColor} hover:bg-${selectedColor} text-white font-bold py-2 px-4  rounded h-7 w-20`}
+        className={`${selectedColor.bgColor} hover:bg-${selectedColor.bgColor} text-white font-bold py-2 px-4  rounded h-7 w-20`}
         onClick={toggleCard}
       ></button>
       {isCardOpen && (
@@ -70,21 +73,26 @@ const ColorPicker = () => {
           >
             <div className="grid grid-cols-6 gap-1">
               {/* First Row */}
-              {colors.map((colorCode: string, index: number) => {
-                return (
-                  <div
-                    key={colorCode}
-                    className="col-span-1 flex justify-center items-center"
-                  >
+              {colors.map(
+                (
+                  colorObj: { bgColor: string; textColor: string },
+                  index: number
+                ) => {
+                  return (
                     <div
-                      className={`w-6 h-6 rounded-full bg-${colorCode} ${
-                        selectedColor === colorCode && "ring"
-                      } cursor-pointer transform hover:scale-105 hover:ring transition duration-300 `}
-                      onClick={() => handleClick(colorCode)}
-                    ></div>
-                  </div>
-                );
-              })}
+                      key={colorObj.bgColor}
+                      className="col-span-1 flex justify-center items-center"
+                    >
+                      <div
+                        className={`w-6 h-6 rounded-full ${colorObj.bgColor} ${
+                          selectedColor.bgColor === colorObj.bgColor && "ring"
+                        } cursor-pointer transform hover:scale-105 hover:ring transition duration-300 `}
+                        onClick={() => handleClick(colorObj)}
+                      ></div>
+                    </div>
+                  );
+                }
+              )}
             </div>
           </div>
         </div>
