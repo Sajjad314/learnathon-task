@@ -1,6 +1,3 @@
-import React from "react";
-import imagee from "../../assets/KidInSnow.png";
-import Image from "next/image";
 import CancelVectorSVG from "@/assets/Icon/CancelVectorSVG";
 import TickSignSVG from "@/assets/Icon/TickSignSVG";
 import stylegirl from "@/assets/StyleGirl.png";
@@ -11,122 +8,18 @@ import {
   jost,
   libreBaskerville,
   libre_bodoni,
-  manrope,
   metrophobic,
 } from "@/utils/fonts";
+import Image from "next/image";
+import imagee from "../../assets/KidInSnow.png";
+import Template2 from "./template2";
 
 const page = () => {
   return (
     <div className=" bg-white flex flex-col">
       <div className="flex flex-row bg-white">
         <div className=" m-10 mr-20">
-          <div
-            style={{
-              position: "relative",
-              width: "304px",
-              height: "364px",
-              backgroundColor: "#D2FBE726",
-              //   textAlign: "center",
-              paddingTop: "72px",
-              //   display: "flex",
-              //   flexDirection: "column",
-              justifyContent: "center",
-              paddingInline: "18px",
-            }}
-          >
-            <div
-              style={{
-                position: "absolute",
-                top: "5px",
-                right: "5px",
-                cursor: "pointer",
-                margin: "8px",
-                color: "#212121",
-              }}
-            >
-              X
-            </div>
-            <div
-              style={{
-                marginBottom: "32px",
-              }}
-            >
-              <p
-                style={{
-                  fontFamily: manrope.style.fontFamily,
-                  fontWeight: 600,
-                  fontSize: "20px",
-                  lineHeight: "27.32px",
-                  textAlign: "center",
-                  color: "#212121",
-                  marginBottom: "16px",
-                }}
-              >
-                Unlock 10% Off Today
-              </p>
-              <p
-                style={{
-                  fontFamily: manrope.style.fontFamily,
-                  fontSize: "14px",
-                  fontWeight: 300,
-                  lineHeight: "19px",
-                  letterSpacing: "0em",
-                  textAlign: "center",
-                  color: "#212121",
-                }}
-              >
-                When you signup
-              </p>
-            </div>
-            <input
-              type="text"
-              placeholder="EMAIL ADDRESS
-          "
-              style={{
-                width: "100%" /* Fill */,
-                height: "42px" /* Hug */,
-                padding: "16px",
-                border: "1px solid #979797" /* Assuming a solid border */,
-                gap: "8px",
-                textAlign: "center",
-                marginBottom: "16px",
-              }}
-            />
-            <button
-              style={{
-                width: "100%",
-                height: "42px",
-                textAlign: "center",
-                marginBottom: "16px",
-                gap: "8px",
-                backgroundColor: "#44DAEF",
-              }}
-            >
-              <span
-                style={{
-                  color: "white",
-                  font: "Marope",
-                  fontWeight: 600,
-                }}
-              >
-                CONTINUE
-              </span>
-            </button>
-            <p
-              style={{
-                fontFamily: manrope.style.fontFamily,
-                fontSize: "10px",
-                fontWeight: 400,
-                lineHeight: "16px",
-                letterSpacing: "0em",
-                textAlign: "left",
-                color: "#212121",
-              }}
-            >
-              Only valid for $25 kits. By providing your email address you agree
-              to our <b>Terms</b> and <b>Services</b>
-            </p>
-          </div>
+          <Template2 />
         </div>
         <div className=" m-10">
           <div
