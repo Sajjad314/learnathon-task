@@ -1,22 +1,31 @@
+import CrossIcon from "@/assets/icons/crossIcon";
 import { jost } from "@/utils/fonts";
-import React from "react";
 
 const TemplateSingleLine = () => {
   return (
     <div
       style={{
         backgroundColor: "black",
-        padding: "30px 75px 30px 75px",
+        padding: "30px 75px",
+        position: "relative",
       }}
     >
+      <div
+        style={{
+          position: "absolute",
+          top: "8px",
+          right: "8px",
+          cursor: "pointer",
+        }}
+      >
+        <CrossIcon stroke="#fff" />
+      </div>
       <p
         style={{
           fontFamily: jost.style.fontFamily,
           fontSize: "18px",
           fontWeight: 400,
-          lineHeight: "26px",
-          letterSpacing: "0em",
-          textAlign: "left",
+          textAlign: "center",
           color: "white",
         }}
       >
