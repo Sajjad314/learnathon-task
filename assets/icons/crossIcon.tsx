@@ -12,7 +12,7 @@ const CrossIcon = (
   >
     <path
       d="M13.3332 13.3334L2.6665 2.66675M13.3332 2.66675L2.6665 13.3334"
-      stroke="#212121"
+      stroke={props.stroke ?? "#212121"}
       strokeLinecap="round"
     />
   </svg>
