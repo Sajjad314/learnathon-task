@@ -14,7 +14,7 @@ const TemplateChild = () => {
         boxShadow: "0px 0px 15px -2px rgba(0,0,0,0.2)",
         display: "flex",
         flexDirection: "row",
-        position: "absolute",
+        position: "relative",
       }}
     >
       <div
@@ -23,7 +23,7 @@ const TemplateChild = () => {
           top: "11px",
           right: "11px",
           cursor: "pointer",
-          color: "#212121",
+          // color: "#212121",
         }}
       >
         <CancelVectorSVG />
