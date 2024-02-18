@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import stylegirl from "@/assets/StyleGirl.png";
-import { inria_sans, libre_bodoni } from "@/utils/fonts";
+import { inriaSans, libreBodoni } from "@/utils/fonts/index";
+import CrossIcon from "@/assets/icons/crossIcon";
 
 const TemplateStyleGirl = () => {
   return (
@@ -9,9 +10,21 @@ const TemplateStyleGirl = () => {
       style={{
         display: "flex",
         flexDirection: "row",
+        boxShadow: "0px 0px 15px -2px rgba(0,0,0,0.2)",
         backgroundColor: "#E9E9E9",
+        position: "relative",
       }}
     >
+      <div
+        style={{
+          position: "absolute",
+          top: "12px",
+          right: "12px",
+          cursor: "pointer",
+        }}
+      >
+        <CrossIcon />
+      </div>
       <div
         style={{
           padding: "70px 29px 68px 29px",
@@ -28,7 +41,7 @@ const TemplateStyleGirl = () => {
         >
           <p
             style={{
-              fontFamily: inria_sans.style.fontFamily,
+              fontFamily: inriaSans.style.fontFamily,
               fontWeight: 400,
               fontSize: "12px",
               lineHeight: "14.39px",
@@ -40,7 +53,7 @@ const TemplateStyleGirl = () => {
           </p>
           <p
             style={{
-              fontFamily: libre_bodoni.style.fontFamily,
+              fontFamily: libreBodoni.style.fontFamily,
               fontWeight: 700,
               fontSize: "41px",
               lineHeight: "51.25px",
@@ -52,7 +65,7 @@ const TemplateStyleGirl = () => {
           </p>
           <p
             style={{
-              fontFamily: inria_sans.style.fontFamily,
+              fontFamily: inriaSans.style.fontFamily,
               fontWeight: 300,
               fontSize: "12px",
               lineHeight: "14.39px",
@@ -63,7 +76,7 @@ const TemplateStyleGirl = () => {
             page:{" "}
             <span
               style={{
-                fontFamily: inria_sans.style.fontFamily,
+                fontFamily: inriaSans.style.fontFamily,
                 fontWeight: 700,
                 fontSize: "12px",
                 lineHeight: "14.39px",
@@ -83,7 +96,7 @@ const TemplateStyleGirl = () => {
         >
           <span
             style={{
-              fontFamily: inria_sans.style.fontFamily,
+              fontFamily: inriaSans.style.fontFamily,
               fontWeight: 400,
               fontSize: "14px",
               lineHeight: "16.79px",

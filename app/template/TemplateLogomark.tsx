@@ -1,6 +1,6 @@
 import TickSignSVG from "@/assets/Icon/TickSignSVG";
 import CrossIcon from "@/assets/icons/crossIcon";
-import { dm_serif_display, dm_sans } from "@/utils/fonts";
+import { dmSerifDisplay, dmSans } from "@/utils/fonts/index";
 import React from "react";
 
 const TemplateLogomark = () => {
@@ -9,14 +9,16 @@ const TemplateLogomark = () => {
       style={{
         backgroundColor: "#CDFCFF",
         padding: "55px 67px 55px 67px",
+        boxShadow: "0px 0px 15px -2px rgba(0,0,0,0.2)",
+
         position: "relative",
       }}
     >
       <div
         style={{
           position: "absolute",
-          top: "8px",
-          right: "8px",
+          top: "12px",
+          right: "12px",
           cursor: "pointer",
         }}
       >
@@ -43,7 +45,7 @@ const TemplateLogomark = () => {
         </p>
         <p
           style={{
-            fontFamily: dm_serif_display.style.fontFamily,
+            fontFamily: dmSerifDisplay.style.fontFamily,
             fontSize: "32px",
             fontWeight: 400,
             lineHeight: "44px",
@@ -115,7 +117,7 @@ const TemplateLogomark = () => {
         >
           <span
             style={{
-              fontFamily: dm_sans.style.fontFamily,
+              fontFamily: dmSans.style.fontFamily,
               fontWeight: 700,
               fontSize: "16px",
               lineHeight: "20.83px",

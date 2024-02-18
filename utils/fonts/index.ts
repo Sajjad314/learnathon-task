@@ -8,13 +8,11 @@ import {
   Open_Sans,
   Poppins,
   Roboto,
+  Jost,
+  DM_Serif_Display,
+  Inria_Sans,
+  Libre_Bodoni,
 } from "next/font/google";
-
-export const dmSans = DM_Sans({
-  display: "swap",
-  adjustFontFallback: false,
-  subsets: ["latin"],
-});
 
 export const dancingScript = Dancing_Script({
   weight: ["500", "600", "700"],
@@ -53,5 +51,35 @@ export const openSans = Open_Sans({
 
 export const manrope = Manrope({
   weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
+export const jost = Jost({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
+export const dmSerifDisplay = DM_Serif_Display({
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
+export const dmSans = DM_Sans({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
+export const inriaSans = Inria_Sans({
+  weight: ["400", "700", "300"],
+  subsets: ["latin"],
+});
+
+export const libreBodoni = Libre_Bodoni({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
+
+export const metrophobic = Metrophobic({
+  weight: ["400"],
   subsets: ["latin"],
 });

@@ -1,5 +1,5 @@
 import CrossIcon from "@/assets/icons/crossIcon";
-import { jost } from "@/utils/fonts";
+import { jost } from "@/utils/fonts/index";
 
 const TemplateSingleLine = () => {
   return (
@@ -7,14 +7,15 @@ const TemplateSingleLine = () => {
       style={{
         backgroundColor: "black",
         padding: "30px 75px",
+        boxShadow: "0px 0px 15px -2px rgba(0,0,0,0.2)",
         position: "relative",
       }}
     >
       <div
         style={{
           position: "absolute",
-          top: "8px",
-          right: "8px",
+          top: "12px",
+          right: "12px",
           cursor: "pointer",
         }}
       >

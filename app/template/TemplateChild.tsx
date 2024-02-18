@@ -1,8 +1,9 @@
 import CancelVectorSVG from "@/assets/Icon/CancelVectorSVG";
-import { libreBaskerville, metrophobic } from "@/utils/fonts";
+import { libreBaskerville, metrophobic } from "@/utils/fonts/index";
 import React from "react";
 import imagee from "@/assets/KidInSnow.png";
 import Image from "next/image";
+import CrossIcon from "@/assets/icons/crossIcon";
 
 const TemplateChild = () => {
   return (
@@ -20,13 +21,12 @@ const TemplateChild = () => {
       <div
         style={{
           position: "absolute",
-          top: "11px",
-          right: "11px",
+          top: "12px",
+          right: "12px",
           cursor: "pointer",
-          // color: "#212121",
         }}
       >
-        <CancelVectorSVG />
+        <CrossIcon />
       </div>
       <Image src={imagee} alt="Image"></Image>
       <div

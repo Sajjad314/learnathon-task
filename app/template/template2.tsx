@@ -1,5 +1,5 @@
 import CrossIcon from "@/assets/icons/crossIcon";
-import { manrope } from "@/utils/fonts";
+import { manrope } from "@/utils/fonts/index";
 
 export default function Template2() {
   return (
@@ -18,8 +18,8 @@ export default function Template2() {
       <div
         style={{
           position: "absolute",
-          top: "8px",
-          right: "8px",
+          top: "12px",
+          right: "12px",
           cursor: "pointer",
         }}
       >
