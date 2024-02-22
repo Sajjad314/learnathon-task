@@ -12,6 +12,7 @@ import DashboardTable from "@/Components/DashboardTable";
 import ColorPicker from "@/Components/ColorPicker";
 import Graph from "@/Components/Graph";
 import InstallationCodeModal from "@/Components/InstallationCodeModal";
+import DateSelectionModal from "@/Components/DateSelectionModal";
 
 export default function Home() {
   return (
@@ -58,6 +59,7 @@ export default function Home() {
         <div className="flex-1 border p-4 bg-white ml-2 h-1/2 w-1/2">
           <CustomizePopUpModal />
           <InstallationCodeModal />
+          <DateSelectionModal />
           <ColorPicker />
           {/* <Graph /> */}
         </div>
