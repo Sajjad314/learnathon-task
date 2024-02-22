@@ -13,6 +13,9 @@ import ColorPicker from "@/Components/ColorPicker";
 import Graph from "@/Components/Graph";
 import InstallationCodeModal from "@/Components/InstallationCodeModal";
 import DateSelectionModal from "@/Components/DateSelectionModal";
+import ApexLineChart from "@/Components/ApexLineChart";
+import { dmSans } from "@/utils/fonts/index";
+import DropDownIconSVG from "@/assets/Icon/DropDownIconSVG";
 
 export default function Home() {
   return (
@@ -56,12 +59,28 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex-1 border p-4 bg-white ml-2 h-1/2 w-1/2">
-          <CustomizePopUpModal />
+        <div className="flex-1 border px-7 pt-8 bg-white ml-2 h-1/2 w-1/2">
+          <div className="flex items-center w-full">
+            <p
+              className={`mr-auto ${dmSans.style.fontFamily} text-xl font-bold leading-6 tracking-normal text-left text-gray-900`}
+            >
+              Stats
+            </p>
+            <div className=" ml-auto flex flex-row">
+              <p
+                className={`${dmSans.style.fontFamily} text-sm font-bold tracking-normal text-right text-[#A3AED0] mr-2`}
+              >
+                Yearly
+              </p>
+              <DropDownIconSVG />
+            </div>
+          </div>
+          {/* <CustomizePopUpModal />
           <InstallationCodeModal />
           <DateSelectionModal />
-          <ColorPicker />
+          <ColorPicker /> */}
           {/* <Graph /> */}
+          <ApexLineChart />
         </div>
       </div>
       <div className="flex-1 border p-4 bg-white rounded-[10px] ml-4 m-2 ">

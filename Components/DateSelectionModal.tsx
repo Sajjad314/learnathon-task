@@ -14,6 +14,7 @@ import { Label } from "@/Components/ui/label";
 import { dmSans } from "@/utils/fonts/index";
 
 import "react-datepicker/dist/react-datepicker.css";
+import { DateTimePicker } from "./ui/dateTimePicker/date-time-picker";
 
 const DateSelectionModal = () => {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -43,6 +44,7 @@ const DateSelectionModal = () => {
         <div>
           <h2>Date and Time Picker</h2>
           {/* <DateTimePicker label={"date"}/> */}
+          <DateTimePicker granularity={"minute"} />
         </div>
         <DialogFooter className=" my-2"></DialogFooter>
       </DialogContent>
